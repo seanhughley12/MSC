@@ -115,30 +115,31 @@ function useReveal(){const ref=useRef(null);useEffect(()=>{const el=ref.current;
 function Reveal({children,className=''}){const r=useReveal();return <div ref={r} className={`reveal ${className}`}>{children}</div>;}
 
 const execSummary = {
-  headline: 'Converting MSC from a validated agent-governance need into a committed E7 platform, anchored to Geneva and the Agent 365 FinOps proof.',
-  decision: 'Fabio Catassi and the MSC Cargo leadership must decide to fund E7 as the governed foundation for agents at scale, with cost predictability resolved through the Agent 365 and FinOps workstream.',
-  current: 'Agent 365 and E7 discussion ran Sept 25 with MSC security and IT. The centralized agent-governance need is validated and tied to FinOps and cost predictability. MSC is engaged in the private-preview workstream. E7 is not yet committed; consumption economics is the open question.',
-  objective: 'Land E7 across the MSC Cargo workforce as the secure, governed control plane for agents, with Copilot baked in and consumption economics made predictable so leadership can approve on business value, not run cost.',
+  headline: 'Position E7 as MSC\u2019s strategic AI standard: the fixed-cost economic foundation for 71,000 users, governed by Agent 365 and FinOps, entering budget planning as the preferred path for workforce AI and agent scale.',
+  decision: 'Fabio Catassi and MSC Cargo leadership must decide to set the E7 economic foundation now at $13/user, adopting it into budget planning as the standard for workforce AI, governance, and agent scale, with activation phased at MSC\u2019s pace.',
+  current: 'MSC is already scaling AI: SOFIA in production (3,000, architected to 30,000), ~9,100 Copilot licenses, and ~8,000 agents in tenant. MSC\u2019s own billed-vs-non-billed data shows 96.2% of Copilot Studio agent consumption already rides licenses they own. The named priority is predictable cost and a governed estate. The question is no longer whether to scale AI, it is how to pay, govern, and adopt it.',
+  objective: 'Lock E7 as the fixed-cost standard across the 71,000-user fleet (~$11.08M/yr at $13) so everyday AI rides a predictable license while agentic consumption is governed through Agent 365 and FinOps, moving the approval conversation from run cost to business value.',
   risks: [
-    'E7 uncommitted. MSC sees the governance need but wants cost predictability and consumption economics resolved first.',
-    'Decision authority sits with Fabio Catassi across all MSC entities; the motion must reach him, not stall at champion level.',
-    'The value of broad licensing versus targeted deployment is still being weighed.',
+    'Variable economics: 8,000 agents with no pre-build cost estimate and no central spend authority. Cost is unpredictable as the estate grows.',
+    'Governance: no shared registry, ownership, or lifecycle across the estate; third-party models run outside the stack.',
+    'Adoption: scale depends on real, repeated use, not licenses issued. Decision must reach Fabio, not stall at champion level.',
   ],
   milestones: [
-    { date: 'October', text: 'Geneva engagement: connect Agent 365, Entra security, and FinOps into a quantified E7 path' },
-    { date: 'October', text: 'Validate MSC actual agent consumption and cost model; define seat scope' },
-    { date: 'FY27', text: 'Executive decision on the committed E7 commercial path' },
+    { date: 'Summit', text: 'Align on E7 as MSC\u2019s strategic AI standard, entering budget planning as the preferred path' },
+    { date: 'October', text: 'Validate consumption absorption across a full billing quarter, plus SOFIA\u2019s separate Azure runtime' },
+    { date: 'FY27', text: 'Set the $13 economic foundation (2-yr term, year-2 pending deal desk); phase activation in waves' },
   ],
 };
 
 const execItems = [
-  { status: 'done', text: 'Ran the Agent 365 / E7 discussion with MSC security and IT', evidence: 'Sep 25 · MSC E7/Agent 365 Discussion' },
-  { status: 'done', text: 'Validated the centralized agent-governance need (visibility, identity, data protection, lifecycle)', evidence: 'Sep 25 · MSC E7/Agent 365 Discussion' },
-  { status: 'done', text: 'Tied the motion to FinOps and cost predictability', evidence: 'Sep 28 · Post Agent 365/E7 MSC Cargo Internal Alignment' },
-  { status: 'done', text: 'Engaged MSC in the private-preview workstream', evidence: 'Sep 25 · MSC E7/Agent 365 Discussion' },
-  { status: 'now', text: 'Use the October Geneva engagement to connect Agent 365, Entra security, and FinOps into a quantified E7 path', owner: 'Sean Hughley', by: 'October' },
-  { status: 'now', text: 'Validate MSC actual agent consumption and cost model, then define the seat scope', owner: 'Sean Hughley', by: 'October' },
-  { status: 'now', text: 'Drive toward the executive decision and committed commercial path', owner: 'Sean Hughley / Zoe Blumenthal', by: 'FY27' },
+  { status: 'done', text: 'Built and delivered the CFO capital-allocation narrative: pay, govern, adopt at scale', evidence: 'Sep 2026 \u00b7 MSC E7 economics deck' },
+  { status: 'done', text: 'Proved the fixed-cost mechanic in MSC\u2019s own numbers: 96.2% of agent consumption absorbed by owned licenses', evidence: 'MSC billed-vs-non-billed report (Measured)' },
+  { status: 'done', text: 'Validated the centralized agent-governance need (registry, identity, lifecycle, spend authority)', evidence: 'Sep 25 \u00b7 MSC E7/Agent 365 Discussion' },
+  { status: 'done', text: 'Tied the motion to FinOps and cost predictability; engaged MSC in the private-preview workstream', evidence: 'Sep 28 \u00b7 Post Agent 365/E7 MSC Cargo Internal Alignment' },
+  { status: 'now', text: 'Validate absorption across a full billing quarter and SOFIA\u2019s separate runtime to clear the pay-at-scale bar', owner: 'Sean Hughley', by: 'October' },
+  { status: 'now', text: 'Confirm Agent 365 covers third-party-model agents and Copilot Credits governance', owner: 'Sean Hughley / Zoe Blumenthal', by: 'October' },
+  { status: 'now', text: 'Agree the activation waves and success metrics; land the $1.5M+ Microsoft co-investment', owner: 'Sean Hughley', by: 'FY27' },
+  { status: 'now', text: 'Secure the Summit alignment on E7 as the strategic standard, into budget planning', owner: 'Sean Hughley', by: 'Summit' },
 ];
 
 const opportunity = {
@@ -148,21 +149,21 @@ const opportunity = {
 
 const strategy = {
   whyBuy: [
-    'MSC is scaling agents across Cargo and needs one governed control plane for identity, data protection, visibility, and lifecycle, not point tools.',
-    'As a global shipping leader, security and auditability at scale are operational requirements, not nice-to-haves.',
-    'Leadership wants predictable AI economics so it can approve on business value rather than variable run cost.',
+    'MSC is already scaling AI and named predictable cost and a governed estate as the priority. E7 answers how to pay, govern, and adopt in one standard.',
+    'The fixed-cost mechanic is proven in their own numbers: at scale, covering just SOFIA\u2019s 30,000 on the full stack (~$18.36M) costs more than the entire 71,000 fleet on E7 (~$11.08M).',
+    'As a global shipping operation, governed scale and auditability over 8,000 agents are operational requirements, not nice-to-haves.',
   ],
   whyNow: [
-    'The agent-governance need is validated and MSC is in the private-preview workstream now.',
-    'The October Geneva engagement is the forcing function to quantify the E7 path.',
-    'FinOps and cost predictability are live on the agenda, which is the gate to a committed decision.',
+    'The estate is cheaper and simpler to standardize now than after it doubles; agents are growing faster than MSC can pay for, govern, and adopt.',
+    'MSC is in the private-preview workstream and FinOps/cost predictability is live on the agenda.',
+    'The Summit is the forcing function to enter E7 into budget planning as the preferred path.',
   ],
-  winning: 'Resolve the one blocker, cost predictability, through the Agent 365 and FinOps proof, then convert the validated governance need into a committed E7 platform. Keep the motion reaching Fabio Catassi as the decision maker across all MSC entities, use Clement Martinez and the champion bench to carry it internally, and anchor the quantified path to the October Geneva engagement. Bake Copilot into the E7 foundation and frame the executive decision on business value.',
+  winning: 'Lead with economics, not product. Prove the fixed-cost mechanic in MSC\u2019s own data (96.2% absorbed), frame E7 as the capital-allocation answer to pay-govern-adopt, and separate the commercial foundation from the rollout: set the $13 standard now, activate in waves with $1.5M+ Microsoft co-investment at MSC\u2019s pace. Keep the motion reaching Fabio as decision maker across all entities, use Clement and the champion bench to carry it, and anchor governance to Agent 365 + FinOps over the 8,000-agent estate. Move the approval from run cost to business value.',
   talking: [
-    'MSC is already running agents. The decision is whether to run them on a secure, governed foundation the whole enterprise can trust, or let them sprawl.',
-    'E7 is the control plane: identity, data protection, visibility, and lifecycle for every agent, with Copilot baked in for every employee.',
-    'For a global shipping operation, trust and auditability at scale are the product. E7 engineers them in.',
-    'We will make the economics predictable so you approve this on business value, not on run cost.',
+    'Scaling AI comes down to three questions: how you pay, how you govern, how you adopt. E7 is one answer to all three.',
+    'The fixed-cost mechanic is already running in your own numbers. 96.2% of agent consumption rides licenses you own today.',
+    'At scale, AI becomes infrastructure. Covering just SOFIA\u2019s 30,000 on the full stack costs more than your entire 71,000 fleet on E7.',
+    'Set the economics once, activate at your pace. Microsoft co-invests in the adoption that turns licenses into production. You approve on business value, not run cost.',
   ],
 };
 
@@ -233,17 +234,19 @@ function App(){
 
     <section className="section" id="opportunity">
       <Reveal>
-        <div className="section-label">Opportunity</div>
-        <h2>The E7 Deal: <span className="highlight">73K Seats</span></h2>
-        <p className="section-intro">Pulled from MSX. The Copilot-inclusive E7 SKU across the MSC Cargo workforce. Billed covers the co-term months to the July 1 anniversary; the full renewal retires next fiscal.</p>
+        <div className="section-label">Opportunity &amp; Economics</div>
+        <h2>One standard for the <span className="highlight">whole fleet</span></h2>
+        <p className="section-intro">The booked MSX opportunity sits inside a larger fleet motion. The economic case: fix the cost once across 71,000 users at $13, and everyday AI rides a predictable license while agentic work is governed on the meter.</p>
       </Reveal>
       <div className="opp-grid">
-        <Reveal className="opp-card hero"><div className="ol">Net-new Copilot seats</div><div className="ov">{opportunity.seats.toLocaleString()}</div><div className="os">M365 E7 FUSL SU M365 E5, Copilot-inclusive</div></Reveal>
-        <Reveal className="opp-card"><div className="ol">Billed (co-term)</div><div className="ov">{fmt(opportunity.billed)}</div><div className="os">{opportunity.bm} months to anniversary</div></Reveal>
-        <Reveal className="opp-card"><div className="ol">FY27 Forecast</div><div className="ov">{fmt(fyForecast)}</div><div className="os">In-fiscal-year, anniversary Jul 1 (FY28)</div></Reveal>
+        <Reveal className="opp-card hero"><div className="ol">Fleet E7 at $13/user</div><div className="ov">$11.08M<span style={{fontSize:'15px',fontWeight:600}}> / yr</span></div><div className="os">71,000-user fleet. Covering just SOFIA&rsquo;s 30K on the full stack (~$18.36M) costs more.</div></Reveal>
+        <Reveal className="opp-card"><div className="ol">Absorbed today</div><div className="ov">96.2%</div><div className="os">Of agent consumption rides owned licenses (Measured, MSC data)</div></Reveal>
+        <Reveal className="opp-card"><div className="ol">Agents in tenant</div><div className="ov">~8,000</div><div className="os">~half Copilot Studio; governed by Agent 365 + FinOps</div></Reveal>
+        <Reveal className="opp-card"><div className="ol">Net-new Copilot seats (booked opp)</div><div className="ov">{opportunity.seats.toLocaleString()}</div><div className="os">M365 E7 FUSL SU M365 E5, Copilot-inclusive</div></Reveal>
+        <Reveal className="opp-card"><div className="ol">FY27 Forecast (booked)</div><div className="ov">{fmt(fyForecast)}</div><div className="os">{fmt(opportunity.billed)} billed co-term, {opportunity.bm}mo, anniversary Jul 1 (FY28)</div></Reveal>
+        <Reveal className="opp-card"><div className="ol">3-yr TCO vs standalone</div><div className="ov">$43.5M</div><div className="os">E7 $33.2M fixed vs $76.7M standalone. 57% discount.</div></Reveal>
         <Reveal className="opp-card"><div className="ol">Confidence</div><div className="ov">{opportunity.conf}</div><div className="os">{opportunity.dealType} · close {opportunity.close}</div></Reveal>
-        <Reveal className="opp-card"><div className="ol">Deal type</div><div className="ov">Mid-term</div><div className="os">Anniversary Jul 1 2027</div></Reveal>
-        <Reveal className="opp-card"><div className="ol">Motion</div><div className="ov">E7 + Consumption</div><div className="os">Copilot baked into both</div></Reveal>
+        <Reveal className="opp-card"><div className="ol">Motion</div><div className="ov">E7 + Consumption</div><div className="os">Copilot baked into both. Fixed foundation + governed meter.</div></Reveal>
       </div>
     </section>
 
