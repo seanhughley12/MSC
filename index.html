@@ -34,6 +34,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f6f9fc;color:#0a1f33;l
 .exec-headline-card{background:linear-gradient(135deg,var(--msc-navy),var(--msc-primary));color:#fff;border-radius:18px;padding:40px 44px;box-shadow:var(--shadow-lg)}
 .exec-kicker{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--msc-gold);margin-bottom:14px}
 .exec-headline{font-family:'Space Grotesk',sans-serif;font-size:36px;line-height:1.2;font-weight:700;letter-spacing:-.5px;max-width:22ch;margin-bottom:20px;color:#fff}
+.exec-headline-card .exec-headline{color:#fff !important}
 .exec-decision{background:rgba(255,255,255,.12);border-left:4px solid var(--msc-gold);border-radius:8px;padding:14px 18px;font-size:16px}
 .exec-decision strong{color:var(--msc-gold)}
 .exec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:28px}
@@ -169,12 +170,12 @@ const strategy = {
 
 const stakeholders = [
   { name: 'Fabio Catassi', role: 'CIO, MSC Cargo (parent) · primary decision maker across all MSC entities', status: 'exec', cares: 'Enterprise AI strategy, governed scale, and predictable economics across every MSC entity.', note: 'The decision must reach Fabio, not stall at champion level.' },
+  { name: 'Quentin', role: 'Key influencer · agent cost & economics', status: 'engaged', cares: 'Cost predictability. His primary concern is estimating how much agents will cost as the estate scales.', note: 'Sean is presenting the economic model to Quentin for feedback. Central to the pay-at-scale case.' },
   { name: 'Clement Martinez', role: 'Head of Global CIO Office', status: 'champion', cares: 'Copilot adoption and the broader AI agenda. Big Copilot champion.', note: 'Champion, not the decision maker; carries the motion internally.' },
-  { name: 'Zoe Blumenthal', role: 'Microsoft · MSC Cargo E7 / Agent 365 lead', status: 'engaged', cares: 'Driving the E7/Agent 365 commercial path to an executive decision.', note: 'Co-owns the commercial motion with Sean.' },
+  { name: 'MSC Security / CISO', role: 'Security · Entra, Defender, Purview', status: 'engaged', cares: 'Governance, identity, data protection across the agent estate; E5 security stack. Agent 365 as the control plane.', note: 'Name to confirm. Raised governance concerns on prior calls; MS security team (Zoe) leading Purview/Entra with their CISO.' },
   { name: 'Roberta Suda', role: 'Global AI Champion · North & Central America', status: 'champion', cares: 'AI adoption and championing use cases across the Americas.', note: 'Regional champion supporting the motion.' },
   { name: 'Gilmar Nogueira Sousa', role: 'IT Leader · Developer & EUC', status: 'champion', cares: 'Developer and end-user computing enablement.', note: 'Technical champion on the EUC side.' },
   { name: 'Renato Grecchi', role: 'IT Manager · Marketing & Dynamics Services', status: 'champion', cares: 'Dynamics and marketing services modernization.', note: 'Champion in the Dynamics workstream.' },
-  { name: 'George Ciprian Nedelcu', role: 'MSC Technology Italia', status: 'engaged', cares: 'Technology architecture and delivery out of MSC Technology Italia.', note: 'Engaged on the technical side.' },
 ];
 
 function App(){
